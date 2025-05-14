@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Radif's Note</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+</head>
+<body>
+  <div class="container">
+    <h1>📝 Radif's Note</h1>
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <input id="title" placeholder="Note title" />
+    <textarea id="content" placeholder="Write your note..."></textarea>
+    <button onclick="saveNote()">Save Note</button>
+    <button onclick="listNotes()">List Notes</button>
+    <div id="notes"></div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    }
+  </script>
+</body>
+      </html>
