@@ -1,0 +1,25 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f0f0f0;
+  color: #222;
+  transition: all 0.3s;
+}
+body.dark {
+  background: #121212;
+  color: #eee;
+}
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+textarea, input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+button {
+  padding: 10px;
+  margin-top: 10px;
+}
